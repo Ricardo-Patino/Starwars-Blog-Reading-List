@@ -8,7 +8,7 @@ export const Home = () => (
 			<img
 				width={400}
 				height={300}
-				src="https://www.projectcasting.com/wp-content/uploads/2018/09/star-wars-696x400.jpg"
+				src="https://i.pinimg.com/originals/6a/5b/22/6a5b22b88725f21b25f93e004165c6b8.jpg"
 				alt="Planets"
 			/>
 		</Link>
