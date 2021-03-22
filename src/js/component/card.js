@@ -6,9 +6,9 @@ export const Card = props => {
 		<div className="card" style={{ width: "18rem;" }}>
 			<img className="card-img-top" src="..." alt="Card image cap" />
 			<div className="card-body">
-				<h5 className="card-title">{Props.name}</h5>
-				<p className="card-text">{Props.hair}</p>
-				<p className="card-text">{Props.eyes}</p>
+				<h5 className="card-title">{props.name}</h5>
+				<p className="card-text">{props.hair}</p>
+				<p className="card-text">{props.eyes}</p>
 				<a href="#" className="btn btn-primary">
 					Read more...
 				</a>

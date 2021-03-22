@@ -8,16 +8,17 @@ export const Character = () => {
 	console.log("data", store.peoples);
 
 	return (
-		<div className="container">
-			<div className="list-group" />
+		<div className="container text-center">
 			<h1>Characters</h1>
-			{store.peoples.map((item, index) => {
-				return (
-					<div key={index}>
-						<Card name={item.name} hair={item.hair_color} eyes={item.eye_color} />;
-					</div>
-				);
-			})}
+			<div className="card-deck">
+				{store.peoples.map((item, index) => {
+					return (
+						<div key={index} className="col-md-4 mb-3">
+							<Card name={item.name} hair={item.hair_color} eyes={item.eye_color} />
+						</div>
+					);
+				})}
+			</div>
 			<Link to="/">
 				<button className="btn btn-primary">Ir a Home</button>
 			</Link>

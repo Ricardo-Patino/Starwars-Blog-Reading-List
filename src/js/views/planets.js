@@ -5,19 +5,20 @@ import { Card } from "../component/card";
 
 export const Planets = () => {
 	const { store } = useContext(Context);
-	console.log("data", store.peoples);
+	console.log("Planet-data", store.planets);
 
 	return (
-		<div className="container">
-			<div className="list-group" />
-			<h1>Planetss</h1>
-			{store.peoples.map((item, index) => {
-				return (
-					<div key={index}>
-						<Card name={item.name} hair={item.Planet_color} eyes={Planet_size} />;
-					</div>
-				);
-			})}
+		<div className="container text-center mt-5">
+			<h1>Planets</h1>
+			<div className="card-deck">
+				{store.planets.map((item, index) => {
+					return (
+						<div key={index} className="col-md-4 mb-3">
+							<Card name={item.name} hair={item.population} eyes={item.diameter} />
+						</div>
+					);
+				})}
+			</div>
 			<Link to="/">
 				<button className="btn btn-primary">Ir a Home</button>
 			</Link>
