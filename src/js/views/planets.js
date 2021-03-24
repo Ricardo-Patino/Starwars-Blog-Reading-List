@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
-import { Card } from "../component/card";
+import { Cardplanet } from "../component/cardplanet";
 
 export const Planets = () => {
 	const { store } = useContext(Context);
-	console.log("Planet-data", store.planets);
+	console.log("data", store.planets);
 
 	return (
 		<div className="container text-center mt-5">
@@ -14,7 +14,7 @@ export const Planets = () => {
 				{store.planets.map((item, index) => {
 					return (
 						<div key={index} className="col-md-4 mb-3">
-							<Card name={item.name} hair={item.population} eyes={item.diameter} />
+							<Cardplanet name={item.name} diameter={item.diameter} climate={item.climate} />
 						</div>
 					);
 				})}
@@ -25,3 +25,5 @@ export const Planets = () => {
 		</div>
 	);
 };
+
+let planets = [{ name }];
