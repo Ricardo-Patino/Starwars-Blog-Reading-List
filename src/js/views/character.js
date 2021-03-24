@@ -14,7 +14,11 @@ export const Character = () => {
 				{store.peoples.map((item, index) => {
 					return (
 						<div key={index} className="col-md-4 mb-3">
-							<Card name={item.name} hair={item.hair_color} eyes={item.eye_color} />
+							<Card
+								name={item.name}
+								hair={"Hair Color: " + item.hair_color}
+								eyes={"Eye Color: " + item.eye_color}
+							/>
 						</div>
 					);
 				})}
