@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 import { Planets } from "./views/planets";
 import { Character } from "./views/character";
+import { Characterdetails } from "./component/characterdetails";
+import { Planetdetails } from "./component/planetsdetails";
 
 import { Home } from "./views/home";
 import { Demo } from "./views/demo";
@@ -38,6 +40,12 @@ const Layout = () => {
 						</Route>
 						<Route exact path="/character">
 							<Character />
+						</Route>
+						<Route exact path="/characterdetails/:id1">
+							<Characterdetails />
+							<Route exact path="/planetdetails/:id2">
+								<Planetdetails />
+							</Route>
 						</Route>
 					</Switch>
 					<Footer />
