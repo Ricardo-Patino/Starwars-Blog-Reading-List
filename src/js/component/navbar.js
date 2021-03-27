@@ -13,12 +13,33 @@ export const Navbar = () => {
 						alt="Planets"
 					/>
 				</span>
+
+				<div className="ml-auto">
+					<div className="dropdown">
+						<button
+							className="btn btn-secondary dropdown-toggle"
+							type="button"
+							id="dropdownMenuButton"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false">
+							❤ Favorites <span className="badge badge-dark">0</span>
+						</button>
+						<div className="dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+							<a className="dropdown-item" href="#">
+								Action
+							</a>
+							<a className="dropdown-item" href="#">
+								Another action
+							</a>
+							<a className="dropdown-item" href="#">
+								Something else here
+							</a>
+						</div>
+					</div>
+				</div>
 			</Link>
-			<div className="ml-auto">
-				<Link to="/demo">
-					<button className="btn btn-primary">♥ Favorites</button>
-				</Link>
-			</div>
+			<div className="ml-auto" />
 		</nav>
 	);
 };
