@@ -18,6 +18,7 @@ export const Planets = () => {
 								name={"Planet Name: " + item.name}
 								diameter={"Planet Size: " + item.diameter}
 								climate={"Temperature: " + item.climate}
+								index={index}
 							/>
 						</div>
 					);

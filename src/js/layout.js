@@ -43,10 +43,11 @@ const Layout = () => {
 						</Route>
 						<Route exact path="/characterdetails/:id1">
 							<Characterdetails />
-							<Route exact path="/planetdetails/:id2">
-								<Planetdetails />
-							</Route>
 						</Route>
+						<Route exact path="/planetdetails/:id2">
+							<Planetdetails />
+						</Route>
+						<Route> Not Found</Route>
 					</Switch>
 					<Footer />
 				</ScrollToTop>
