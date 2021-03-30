@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import { PlanetDetails } from "../component/planetsdetails";
 
 export const Cardplanet = props => {
 	return (

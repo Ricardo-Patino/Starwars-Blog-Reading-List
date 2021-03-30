@@ -12,7 +12,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 					background: "white",
 					initial: "white"
 				}
-			]
+			],
+			peoples: []
 		},
 		actions: {
 			loadPeoples: async () => {
